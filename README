@@ -1,0 +1,7 @@
+== Welcome to perftest (rails PERFormance TEST)
+
+Have you ever wondered how much perfomance you lost when you went from one NIC to another, or one router to another?  Or even how much longer your pages took to load when you swapped your nginx for Apache with a ton of modules installed.  Well this suite is designed to help you gauge how your app is able to perform in a very simple way.  
+
+This app is a place that can test the performance of your ruby on rails rig.  It's going to start very simple and as I need more datapoints, I will code them at that time.  
+
+Currently, the only datapoints tracked are overall response time of each page.  A ruby script will be fired from a remote station.  That's pretty lame, but then again, this is the most important factor so I find it to my liking.  
