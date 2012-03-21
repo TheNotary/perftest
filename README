@@ -4,4 +4,6 @@ Have you ever wondered how much perfomance you lost when you went from one NIC t
 
 This app is a place that can test the performance of your ruby on rails rig.  It's going to start very simple and as I need more datapoints, I will code them at that time.  
 
+I want 2 testing modes, one involves the rails app and a client.  Another testing mode will involve just the rails app and a web browser will be used and js will fire off ajax requests and figure out what the response times are and then format a report right there on the web page.  I think I'll start with that implimentation actually, the script isn't at all interesting to me and was a dumb idea in the first place.  
+
 Currently, the only datapoints tracked are overall response time of each page.  A ruby script will be fired from a remote station.  That's pretty lame, but then again, this is the most important factor so I find it to my liking.  
