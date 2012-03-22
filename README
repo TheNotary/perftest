@@ -1,9 +1,9 @@
-== Welcome to perftest (rails PERFormance TEST)
+== Welcome to perftest (rails rig PERFormance TEST)
 
-Have you ever wondered how much perfomance you lost when you went from one NIC to another, or one router to another?  Or even how much longer your pages took to load when you swapped your nginx for Apache with a ton of modules installed.  Well this suite is designed to help you gauge how your app is able to perform in a very simple way.  
+Have you ever wondered how much perfomance you lost when you went from one NIC to another, or one router to another?  Or even how much longer your pages took to load when you swapped your nginx for Apache with a ton of modules installed.  Well this app is designed to help you gauge how well your rig is able to perform in a very simple way.  
 
-This app is a place that can test the performance of your ruby on rails rig.  It's going to start very simple and as I need more datapoints, I will code them at that time.  
+Progress:  It's going to start very simple and as I need more datapoints, I will code them at that time.  If you need something or have any ideas, feel free to send me a message and I'll consider their implimentation.  
 
-I want 2 testing modes, one involves the rails app and a client.  Another testing mode will involve just the rails app and a web browser will be used and js will fire off ajax requests and figure out what the response times are and then format a report right there on the web page.  I think I'll start with that implimentation actually, the script isn't at all interesting to me and was a dumb idea in the first place.  
+The test will involve just the rails app.  A web browser will be used and js will fire off ajax requests and figure out what the response times are and then format a report right there on the web page.    
 
-Currently, the only datapoints tracked are overall response time of each page.  A ruby script will be fired from a remote station.  That's pretty lame, but then again, this is the most important factor so I find it to my liking.  
+Currently, the only datapoints tracked are overall response time of each page.  That's pretty lame, but then again, this is the most important factor so I find it to my liking.  
