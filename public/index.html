@@ -176,10 +176,27 @@
 	background:black;
 	color:white;
       }
+      
+      #scoreCard{
+        background:black;
+	color:white;
+	width: 300px;
+	padding-left: 0px;
+	margin-left: 105px;
+      }
 
+      #scoreCard ul{
+	list-style-type: none; 
+	padding-left:0px;
+      }
+      
+      #scoreCard ul li{
+        padding-left:5px;
+      }
 
     </style>
     <script src="/javascripts/tests.js"></script>
+    <script src="/javascripts/jquery.js"></script>
   </head>
   <body>
     <div id="page">
@@ -213,10 +230,22 @@
 	  </ol>
 
 
-	  <div id='testWindow'>Test Window
+	  <div id='testWindow' style='overflow:scroll;'>Test Window
 
 	  </div>
         </div>
+	<div id='scoreCard'>
+            <ul>
+	      <li>Average: <span id='average'></span></li>
+	      <li>High:  <span id='high'></span></li>
+	      <li>Low:  <span id='low'></span></li>
+
+	      <li>Database:</li>
+	      <li>Views:</li>
+	      <li>Etc.</li>
+	    </ul>
+
+	</div>
       </div>
 
       <div id="footer">&nbsp;</div>
