@@ -1,7 +1,8 @@
 function basicTest(){
   clearConsole();
+  clearScorecard();
   var totTime = 0;
-  var n = findN('basicTest'); // 100
+  var n = findN('basicTest'); // 1000
   var high = 0;
   var low = 60000;
 
@@ -33,7 +34,11 @@ function basicTest(){
 }
 
 function clearConsole(){
-  $('#displayWindow').html('');
+  $('#testWindow').html('');
+}
+
+function clearScorecard(){
+  $('#scorecard ul li span').html('');
 }
 
 function writeLine(text){
@@ -52,5 +57,15 @@ function doAjaxReq(url){
 // TODO:  Calculate what the proper sample size should be for the 
 // environment
 function findN(test){
-  return 100;
+  if($('#n').val() == ''){
+    return 1000;
+  }
+  else{
+    return $('#n').val();
+  }
+}
+
+
+function cancelTest(){
+  alert('not impl');
 }

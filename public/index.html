@@ -177,7 +177,7 @@
 	color:white;
       }
       
-      #scoreCard{
+      #scorecard{
         background:black;
 	color:white;
 	width: 300px;
@@ -185,12 +185,12 @@
 	margin-left: 105px;
       }
 
-      #scoreCard ul{
+      #scorecard ul{
 	list-style-type: none; 
 	padding-left:0px;
       }
       
-      #scoreCard ul li{
+      #scorecard ul li{
         padding-left:5px;
       }
 
@@ -223,18 +223,27 @@
           <h2>Here&rsquo;s how to get rolling:</h2>
 
           <ol>
+	    <li>
+	      <h2>Fill in a value for n in the input box below</h2>
+	      <p>This will mark the sample size and bares on the reliability and duration time of the test.  Leave it blank for sample size of 1000.</p>
             <li>
               <h2>Click one of the tests on the side bar.</h2>
               <p>The results of the test will populate the window below.<p>
             </li>
 	  </ol>
 
+	  <input id='n' value='100'/>
+
 
 	  <div id='testWindow' style='overflow:scroll;'>Test Window
-
 	  </div>
+
+	  <button onClick='cancelTest()'>Cancel Test</button>
+
+
+
         </div>
-	<div id='scoreCard'>
+	<div id='scorecard'>
             <ul>
 	      <li>Average: <span id='average'></span></li>
 	      <li>High:  <span id='high'></span></li>
